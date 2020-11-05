@@ -1,0 +1,6 @@
+@use "../vars";
+
+.content {
+    background-color: $content-color;
+    min-height: 300px;
+}

@@ -1,0 +1,16 @@
+@use "../vars";
+@use "../templates";
+
+.footer {
+    background-color: $main-color;
+    color: $text-color;
+    padding: 15px 0;
+
+    &-item {
+        @extend %header-footer-item;
+    }
+
+    &-link {
+        @include link($font-size);
+    }
+}
