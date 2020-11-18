@@ -1,0 +1,12 @@
+.slider {
+    &-title {
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 200px;
+}

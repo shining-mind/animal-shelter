@@ -1,1 +1,2 @@
-require('./bootstrap');
+import 'owl.carousel';
+import './components/slider'

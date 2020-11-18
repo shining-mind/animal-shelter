@@ -1,17 +1,11 @@
 @use "../vars";
-@use "../templates";
 
 .header {
     background-color: $main-color;
     color: $text-color;
-    &-item {
-        @extend %header-footer-item;
-        &--middle {
-            text-align: center;
+    @include media-breakpoint-up(md) {
+        .nav {
+            height: $header-height;
         }
-    }
-
-    &-link {
-        @include link($font-size);
     }
 }

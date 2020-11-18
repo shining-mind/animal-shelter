@@ -6,11 +6,9 @@
     color: $text-color;
     padding: 15px 0;
 
-    &-item {
-        @extend %header-footer-item;
-    }
-
-    &-link {
-        @include link($font-size);
+    @include media-breakpoint-up(md) {
+        .nav {
+            height: $footer-height;
+        }
     }
 }

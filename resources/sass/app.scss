@@ -1,10 +1,13 @@
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/grid";
+@import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./vars";
 @import "./mixins";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/content";
+@import "./components/nav";
+@import "./components/slider";
 
 * {
     font-family: $font-family;
@@ -12,4 +15,8 @@
 
 body {
     background-image: url('../images/bg.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $main-color;
 }

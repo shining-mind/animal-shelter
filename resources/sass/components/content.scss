@@ -3,4 +3,7 @@
 .content {
     background-color: $content-color;
     min-height: 300px;
+    @include media-breakpoint-up(md) {
+        min-height: calc(100vh - #{$header-height} - #{$footer-height});
+    }
 }
