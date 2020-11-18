@@ -11,11 +11,11 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <div class="nav-item"><a href="" class="nav-link">Хочу помочь</a></div>
-                <div class="nav-item"><a href="/" class="nav-link">Котопёс</a></div>
-                <div class="nav-item"><a href="" class="nav-link">Меню</a></div>
-            </nav>
+            <div class="row header-inner">
+                <div class="col header-item--help text-left"><a href="" class="header-link">Хочу помочь</a></div>
+                <div class="col text-center"><a href="" class="header-link"><img src="{{ asset('/images/logo.png') }}"/></a></div>
+                <div class="col text-right"><a href="" class="nav-link">Меню</a></div>
+            </div>
         </div>
     </header>
     <div class="container-md">
@@ -31,6 +31,7 @@
                 <div class="nav-item"><a href="" class="nav-link">Список участников</a></div>
                 <div class="nav-item"><a href="" class="nav-link">Спонсоры</a></div>
             </nav>
+            <div class="text-center">Дрим тим, 2020 (c)</div>
         </div>
     </footer>
     <script src="js/app.js"></script>

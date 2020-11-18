@@ -8,7 +8,7 @@
     </section>
     <section class="section">
         <div class="text-center">
-            <a class="btn btn--feeling-lucky" href="">@lang('messages.feeling_lucky')</a>
+            <a class="btn btn--action" href="">@lang('messages.feeling_lucky')</a>
         </div>
     </section>
 @endsection

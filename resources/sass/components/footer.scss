@@ -4,11 +4,13 @@
 .footer {
     background-color: $main-color;
     color: $text-color;
-    padding: 15px 0;
+    padding: $footer-padding 0;
+
+    .nav {
+        padding-bottom: 15px;
+    }
 
     @include media-breakpoint-up(md) {
-        .nav {
-            height: $footer-height;
-        }
+        min-height: $footer-height;
     }
 }

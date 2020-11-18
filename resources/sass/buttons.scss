@@ -1,11 +1,16 @@
 .btn {
+    &:hover {
+        color: $text-color;
+        opacity: 0.9;
+    }
+
     &--find-friend {
         padding: 10px 30px;
         color: $text-color;
         background-color: $main-color;
     }
 
-    &--feeling-lucky {
+    &--action {
         padding: 10px 30px;
         border-radius: 2em;
         color: $text-color;
