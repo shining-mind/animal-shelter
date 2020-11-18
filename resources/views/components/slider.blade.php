@@ -4,16 +4,18 @@
         @foreach ($items as $item)
             <div class="slide" style="background-image: url({{$item->image}})">
                 <span class="like"></span>
-                <span class="slide-title">{{$item->title}}</span>
-                @if (!empty($item->tags))
-                    <div class="tags">
-                        @foreach ($item->tags as $tag)
-                            <span class="tag">
-                                <span class="tag-icon {{$tag->icon}}"></span>
-                                <span class="tag-title">{{$tag->title}}</span>
-                        @endforeach
-                    </div>
-                @endif
+                <div class="slide-info">
+                    <div class="slide-title">{{$item->title}}</div>
+                    @if (!empty($item->tags))
+                        <div class="tags">
+                            @foreach ($item->tags as $tag)
+                                <span class="tag">
+                                    <span class="tag-icon {{$tag->icon}}"></span>
+                                    <span class="tag-title">{{$tag->title}}</span>
+                            @endforeach
+                        </div>
+                    @endif
+                </div>
             </div>
         @endforeach   
     </div>

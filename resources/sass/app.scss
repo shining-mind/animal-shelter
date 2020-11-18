@@ -1,13 +1,17 @@
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/grid";
-@import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./vars";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/utilities/text";
+@import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./mixins";
+@import "./buttons";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/content";
 @import "./components/nav";
 @import "./components/slider";
+@import "./components/section";
 
 * {
     font-family: $font-family;

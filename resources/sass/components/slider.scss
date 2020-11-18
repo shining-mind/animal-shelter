@@ -6,7 +6,27 @@
 }
 
 .slide {
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
     min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-info {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &-title {
+        display: block;
+        padding: 10px 0;
+        color: $text-color;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.owl-item {
+    padding: 0 15px;
 }

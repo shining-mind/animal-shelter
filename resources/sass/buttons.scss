@@ -1,0 +1,14 @@
+.btn {
+    &--find-friend {
+        padding: 10px 30px;
+        color: $text-color;
+        background-color: $main-color;
+    }
+
+    &--feeling-lucky {
+        padding: 10px 30px;
+        border-radius: 2em;
+        color: $text-color;
+        background-color: $secondary-color;
+    }
+}
