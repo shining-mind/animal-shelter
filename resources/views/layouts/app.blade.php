@@ -11,11 +11,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container-md">
             <div class="row header-inner">
-                <div class="col header-item--help text-left"><a href="" class="header-link">Хочу помочь</a></div>
-                <div class="col text-center"><a href="" class="header-link"><img src="{{ asset('/images/logo.svg') }}"/></a></div>
-                <div class="col text-right"><a href="" class="nav-link">Меню</a></div>
+                <div class="col header-item header-item--help text-left"><a href="" class="header-link">Хочу помочь</a></div>
+                <div class="col header-item header-item--logo"><a href="" class="header-link"><img src="{{ asset('/images/logo.svg') }}"/></a></div>
+                <div class="col header-item header-item--menu"><a href="" class="nav-link">Меню</a></div>
             </div>
         </div>
     </header>

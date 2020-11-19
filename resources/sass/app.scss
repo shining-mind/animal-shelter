@@ -3,6 +3,7 @@
 @import "./vars";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/utilities/text";
+@import "~bootstrap/scss/utilities/display";
 @import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./mixins";
 @import "./buttons";
@@ -11,13 +12,12 @@
 @import "./components/content";
 @import "./components/nav";
 @import "./components/slider";
+@import "./components/viewed-pets";
 @import "./components/section";
 
 body {
     background-image: url('../images/bg.png');
     font-family: $font-family;
-}
-
-h1, h2, h3, h4, h5, h6 {
     color: $main-color;
 }
+

@@ -1,5 +1,3 @@
-@use "../vars";
-
 .header {
     background-color: $main-color;
     color: $text-color;
@@ -10,7 +8,22 @@
     }
 
     &-item {
+
+        &--logo {
+            text-align: left;
+            @include media-breakpoint-up(md) {
+                text-align: center;
+            }
+        }
+
         &--help {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                text-align: left;
+                display: block;
+            }
+
             &:before {
                 content: ' ';
                 position: absolute;
@@ -23,6 +36,10 @@
             .header-link {
                 padding-left: 55px;
             }
+        }
+
+        &--menu {
+            text-align: right;
         }
     }
 

@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller as BaseController;
 use App\Repositories\Animals\AnimalRepository;
-use Illuminate\Http\Request;
 
 class HomeController extends BaseController
 {
@@ -17,6 +16,8 @@ class HomeController extends BaseController
 
     public function home()
     {
-        return view('home', ['slider_items' => $this->animalRepository->getAnimalsForHomePage()]);
+        return view('home', [
+            'title' => trans('messages.home_title'), 'slider_items' => $this->animalRepository->getAnimalsForHomePage()
+        ]);
     }
 }

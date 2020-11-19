@@ -1,0 +1,31 @@
+.viewed-pets {
+    padding-bottom: 30px;
+
+    &-wrapper {
+        align-items: center;
+        padding: 30px 15px;
+        background-color: $main-color;
+        color: $text-color;
+    }
+
+    &-logo {
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+
+        &-img {
+            width: 140px;
+
+            @include media-breakpoint-up(lg) {
+                width: 220px;
+            }
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

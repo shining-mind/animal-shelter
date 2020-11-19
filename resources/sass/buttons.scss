@@ -1,17 +1,30 @@
 .btn {
+
     &:hover {
         color: $text-color;
         opacity: 0.9;
     }
 
     &--find-friend {
-        padding: 10px 30px;
+        position: relative;
         color: $text-color;
         background-color: $main-color;
+        
+        &:before {
+            content: ' ';
+            position: absolute;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/icon-search.svg')
+        }
+
+        .btn-text {
+            padding-left: 34px;
+        }
     }
 
     &--action {
-        padding: 10px 30px;
         border-radius: 2em;
         color: $text-color;
         background-color: $secondary-color;
