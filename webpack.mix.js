@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const { min } = require('lodash');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,3 +20,7 @@ mix.js('resources/js/app.js', 'public/js')
     .options({
         processCssUrls: false
     });
+
+if (mix.inProduction()) {
+    mix.version();
+}
