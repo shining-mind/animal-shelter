@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="{{ asset('/images/favicon.png') }}" type="image/x-icon">
     <title>{{ $title ?? 'Animal shelter' }}</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div class="container">
             <div class="row header-inner">
                 <div class="col header-item--help text-left"><a href="" class="header-link">Хочу помочь</a></div>
-                <div class="col text-center"><a href="" class="header-link"><img src="{{ asset('/images/logo.png') }}"/></a></div>
+                <div class="col text-center"><a href="" class="header-link"><img src="{{ asset('/images/logo.svg') }}"/></a></div>
                 <div class="col text-right"><a href="" class="nav-link">Меню</a></div>
             </div>
         </div>
