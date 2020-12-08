@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Home;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
 use App\Repositories\Animals\AnimalRepository;
 
-class HomeController extends BaseController
+class ViewController extends BaseController
 {
     protected AnimalRepository $animalRepository;
 
@@ -18,6 +18,14 @@ class HomeController extends BaseController
     {
         return view('home', [
             'title' => trans('messages.home_title'), 'slider_items' => $this->animalRepository->getAnimalsForHomePage()
+        ]);
+    }
+
+    public function pets()
+    {
+        return view('pets', [
+            'title' => trans('messages.pets_title'),
+            'pets' => $this->animalRepository->getAnimalsForPetsPage()
         ]);
     }
 }

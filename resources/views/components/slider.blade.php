@@ -3,8 +3,9 @@
     <div class="slider-slides owl-carousel">
         @foreach ($items as $item)
             <div class="slide" style="background-image: url({{$item->image}})">
-                <span class="like"></span>
+                <img src="{{$item->image}}" class="card-img" alt="{{$item->title}}">
                 <div class="slide-info">
+                    <span class="like"></span>
                     <div class="slide-title">{{$item->title}}</div>
                     @if (!empty($item->tags))
                         <div class="tags">

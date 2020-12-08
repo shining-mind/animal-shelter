@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
+Route::get('/', [ViewController::class, 'home']);
+Route::get('/pets', [ViewController::class, 'pets']);

@@ -1,0 +1,22 @@
+.pet {
+    &-card {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    &-info {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &-title {
+        display: block;
+        padding: 10px 0;
+        color: $text-color;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0 2px black;
+    }
+}

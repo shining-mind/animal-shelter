@@ -24,8 +24,13 @@
         }
     }
 
+    &--search {
+        color: $text-color;
+        background-color: $secondary-color;
+    }
+
     &--action {
-        border-radius: 2em;
+        border-radius: $border-radius;
         color: $text-color;
         background-color: $secondary-color;
     }
