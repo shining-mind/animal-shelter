@@ -8,3 +8,18 @@
         text-decoration: underline;
     }
 }
+
+@mixin container() {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    @include media-breakpoint-up(md) {
+        max-width: map-get($container-max-widths, md);
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: map-get($container-max-widths, lg);
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: map-get($container-max-widths, xl);
+    }
+}

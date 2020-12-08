@@ -4,4 +4,5 @@
     @include media-breakpoint-up(md) {
         min-height: calc(100vh - #{$header-height} - #{$footer-height} - #{$footer-padding * 2});
     }
+    @include container();
 }

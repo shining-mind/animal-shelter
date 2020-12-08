@@ -19,10 +19,8 @@
             </div>
         </div>
     </header>
-    <div class="container-md">
-        <div class="content">
-            @yield('content')
-        </div>
+    <div class="content">
+        @yield('content')
     </div>
     <footer class="footer">
         <div class="container">
