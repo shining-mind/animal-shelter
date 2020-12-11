@@ -31,10 +31,17 @@
                 <div class="nav-item"><a href="{{ url('/participants') }}" class="nav-link">Список участников</a></div>
                 <div class="nav-item"><a href="{{ url('/sponsors') }}" class="nav-link">Спонсоры</a></div>
             </nav>
-            <div class="text-center">Дрим тим, 2020 (c)</div>
+            <div class="text-center">
+                Дрим тим, 2020 (c)
+                <div class="feedback">
+                    <a href="#" data-toggle="modal" data-target="#modal-feedback">@lang('messages.toggle_feedback')</a>
+                </div>
+            </div>
+            @yield('footer')
         </div>
     </footer>
     <script src="{{ mix('/js/app.js') }}"></script>
     @yield('scripts')
+    @include('modals.feedback')
 </body>
 </html>

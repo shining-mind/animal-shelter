@@ -12,4 +12,6 @@ return [
     'pet_filter_age_junior' => 'Юный',
     'pet_filter_age_young' => 'Молодой',
     'pet_filter_age_senior' => 'Зрелый',
+    'modal_submit' => 'Отправить',
+    'modal_close' => 'Закрыть',
 ];

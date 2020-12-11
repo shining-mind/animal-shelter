@@ -1,13 +1,20 @@
+
+@import "./vars";
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/grid";
-@import "./vars";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/utilities/text";
 @import "~bootstrap/scss/utilities/display";
 @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/transitions";
 @import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./mixins";
 @import "./buttons";
+@import "./forms";
+@import "./modal";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/content";
@@ -24,3 +31,11 @@ body {
     color: $main-color;
 }
 
+a {
+    @include link();
+}
+
+.feedback {
+    font-size: 0.8em;
+    line-height: 0.8em;
+}
