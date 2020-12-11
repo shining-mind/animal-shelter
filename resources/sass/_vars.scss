@@ -1,6 +1,8 @@
+$theme-colors: (
+  "primary": #FF4D77
+);
 $main-color: #00A4BA;
 $text-color: #FFF;
-$secondary-color: #FF4D77;
 $content-color: #FFF;
 $font-family: 'Roboto', sans-serif;
 $font-size: 24px;
@@ -11,3 +13,11 @@ $btn-border-radius: 0;
 $btn-padding-y: 10px;
 $btn-padding-x: 60px;
 $border-radius: 2em;
+$modal-content-border-radius: 0;
+$input-border-radius: 1.4em;
+$input-border-color: $main-color;
+$input-border-width: 2px;
+$input-focus-border-color: $main-color;
+$input-btn-focus-color: rgba(0, 164, 186, 0.2);
+$modal-header-border-width: 0;
+$modal-foter-border-width: 0;

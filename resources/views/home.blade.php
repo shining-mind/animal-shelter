@@ -18,12 +18,12 @@
     </section>
     <section class="section">
         <div class="text-center">
-            <a class="btn btn--find-friend" href="{{ url('/pets') }}"><span class="btn-text">@lang('messages.find_friend')</span></a>
+            <a class="btn btn-find-friend" href="{{ url('/pets') }}"><span class="btn-text">@lang('messages.find_friend')</span></a>
         </div>
     </section>
     <section class="section">
         <div class="text-center">
-            <a class="btn btn--action" href="">@lang('messages.feeling_lucky')</a>
+            <a class="btn btn-primary" href="">@lang('messages.feeling_lucky')</a>
         </div>
     </section>
     <section class="section">

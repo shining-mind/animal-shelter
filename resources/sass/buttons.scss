@@ -5,7 +5,7 @@
         opacity: 0.9;
     }
 
-    &--find-friend {
+    &-find-friend {
         position: relative;
         color: $text-color;
         background-color: $main-color;
@@ -24,14 +24,11 @@
         }
     }
 
-    &--search {
-        color: $text-color;
-        background-color: $secondary-color;
+    &-search {
+        background-color: theme-color("primary");
     }
 
-    &--action {
+    &-primary, &-secondary {
         border-radius: $border-radius;
-        color: $text-color;
-        background-color: $secondary-color;
     }
 }

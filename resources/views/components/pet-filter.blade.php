@@ -28,6 +28,6 @@
         <label for="pet-filter-age-senior">@lang('components.pet_filter_age_senior')</label>
     </div>
     <footer class="pet-filter-footer">
-        <button class="btn btn--search">@lang('messages.search')</button>
+        <button class="btn btn-search">@lang('messages.search')</button>
     </footer>
 </form>
