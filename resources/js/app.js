@@ -1,3 +1,4 @@
 import 'owl.carousel'
-import './components/slider'
 import 'bootstrap/js/src/modal'
+import './components/slider'
+import './form-handler';
