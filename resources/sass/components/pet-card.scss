@@ -4,6 +4,12 @@
         margin-bottom: 15px;
     }
 
+    &-img {
+        flex-shrink: 0;
+        width: 100%;
+        border-radius: 1em;
+    }
+
     &-info {
         display: block;
         position: absolute;

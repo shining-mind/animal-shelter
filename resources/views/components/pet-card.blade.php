@@ -1,5 +1,5 @@
 <div class="pet-card {{ $className ?? '' }}">
-    <img class="pet-img card-img" src="{{$pet->image}}" alt="{{$pet->title}}">
+    <img class="pet-img" src="{{$pet->image}}" alt="{{$pet->title}}">
     <div class="pet-info">
         <div class="pet-title">{{$pet->title}}</div>
         @if (!empty($item->tags))
