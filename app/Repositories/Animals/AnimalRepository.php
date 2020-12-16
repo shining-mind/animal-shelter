@@ -8,6 +8,11 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 class AnimalRepository
 {
 
+    public function getRandomId(): ?int
+    {
+        return Pet::query()->limit(1)->inRandomOrder()->value('id');
+    }
+
     public function getAnimalById(int $id): ?object
     {
         return Pet::with('images')->with('tags')->find($id);

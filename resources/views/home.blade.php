@@ -23,7 +23,7 @@
     </section>
     <section class="section">
         <div class="text-center">
-            <a class="btn btn-primary" href="">@lang('messages.feeling_lucky')</a>
+            <a class="btn btn-primary" href="{{ url('/pets/feeling-lucky') }}" rel="nofollow">@lang('messages.feeling_lucky')</a>
         </div>
     </section>
     <section class="section">

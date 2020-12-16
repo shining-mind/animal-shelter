@@ -46,4 +46,13 @@ class ViewController extends BaseController
             'pet' => $pet
         ]);
     }
+
+    public function feelingLucky()
+    {
+        $id = $this->animalRepository->getRandomId();
+        if (is_null($id)) {
+            abort(404);
+        }
+        return response()->redirectTo(url('/pets/' . $id));
+    }
 }
