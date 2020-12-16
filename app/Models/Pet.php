@@ -11,6 +11,11 @@ class Pet extends Model
 
     protected $table = 'pet';
 
+    public function getTitle()
+    {
+        return trans("messages.pet_type_{$this->type->name}") . " " . $this->name;
+    }
+
     public function images()
     {
         return $this->hasMany(PetImage::class);
@@ -30,6 +35,6 @@ class Pet extends Model
 
     public function type()
     {
-        return $this->hasOne(PetType::class);
+        return $this->belongsTo(PetType::class);
     }
 }

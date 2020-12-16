@@ -34,4 +34,16 @@ class ViewController extends BaseController
             'pets' => $pets
         ]);
     }
+
+    public function pet(int $id)
+    {
+        $pet = $this->animalRepository->getAnimalById($id);
+        if (is_null($pet)) {
+            abort(404);
+        }
+        return view('pet', [
+            'title' => $pet->getTitle(),
+            'pet' => $pet
+        ]);
+    }
 }

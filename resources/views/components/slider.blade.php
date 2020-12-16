@@ -2,7 +2,7 @@
     <h2 class="slider-title">{{$title}}</h2>
     <div class="slider-slides owl-carousel">
         @foreach ($items as $item)
-            <div class="slide" style="background-image: url({{$item->image}})">
+            <a href="{{ $item->url }}" class="slide" style="background-image: url({{$item->image}})">
                 <img src="{{$item->image}}" class="card-img" alt="{{$item->title}}">
                 <div class="slide-info">
                     <span class="like"></span>
@@ -17,7 +17,7 @@
                         </div>
                     @endif
                 </div>
-            </div>
+            </a>
         @endforeach   
     </div>
 </div>

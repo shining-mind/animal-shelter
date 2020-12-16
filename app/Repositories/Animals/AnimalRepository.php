@@ -7,13 +7,20 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class AnimalRepository
 {
+
+    public function getAnimalById(int $id): ?object
+    {
+        return Pet::with('images')->with('tags')->find($id);
+    }
+
     public function getAnimalsForHomePage(): array
     {
-        $pets = Pet::query()->select('name')->with('images')->limit(3)->inRandomOrder()->get();
+        $pets = Pet::query()->with('images')->select('id', 'name')->limit(3)->inRandomOrder()->get();
         return $pets->map(function ($pet) {
             return (object) [
                 'title' => $pet->name,
-                'image' => $pet->images[0]
+                'image' => isset($pet->images[0]) ? $pet->images[0]->url : asset('/images/no-image.jpg'),
+                'url' => url('/pets/' . $pet->id)
             ];
         })->all();
     }

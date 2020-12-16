@@ -16,4 +16,20 @@ return [
     'toggle_feedback' => 'Помогите нам стать лучше',
     'feedback_success' => 'Ваша сообщение отправлено! Спасибо за ваше мнение!',
     'feedback_failure' => 'Не удалось отправить сообщение. Попробуйте ещё раз...',
+    'pet_type_cat' => 'Представитель вида кошачих',
+    'pet_type_dog' => 'Собака',
+    'pet_sex' => 'Пол',
+    'pet_age' => 'Возраст',
+    'pet_sex_male' => 'Мужской',
+    'pet_sex_female' => 'Женский',
+    'pet_age_months' => [
+        0 => ':count месяц',
+        1 => ':count месяца',
+        2 => ':count месяцев',
+    ],
+    'pet_age_years' => [
+        0 => ':count год',
+        1 => ':count года',
+        2 => ':count лет',
+    ]
 ];

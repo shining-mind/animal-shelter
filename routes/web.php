@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ViewController::class, 'home']);
 Route::get('/pets', [ViewController::class, 'pets']);
+Route::get('/pets/{id}', [ViewController::class, 'pet']);
