@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
 use App\Repositories\Animals\AnimalRepository;
+use App\View\Components\PetFilter;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class ViewController extends BaseController
 {
@@ -21,11 +25,13 @@ class ViewController extends BaseController
         ]);
     }
 
-    public function pets()
+    public function pets(Request $request)
     {
+        $rules = array_map(fn($values) => Rule::in($values), PetFilter::getFilterValues());
+        $pets = $this->animalRepository->getAnimalsForPetsPage(Validator::validate($request->all(), $rules));
         return view('pets', [
             'title' => trans('messages.pets_title'),
-            'pets' => $this->animalRepository->getAnimalsForPetsPage()
+            'pets' => $pets
         ]);
     }
 }

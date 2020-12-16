@@ -2,8 +2,8 @@
 
 return [
     'pet_filter_type_all' => 'Все животные',
-    'pet_filter_type_dogs' => 'Собаки',
-    'pet_filter_type_cats' => 'Кошки',
+    'pet_filter_type_dog' => 'Собаки',
+    'pet_filter_type_cat' => 'Кошки',
     'pet_filter_type_other' => 'Другие животные',
     'pet_filter_sex_any' => 'Пол не важен',
     'pet_filter_sex_male' => 'Самец',

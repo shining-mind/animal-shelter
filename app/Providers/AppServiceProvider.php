@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if (config('app.debug')) {
+            app('db')->listen(function ($query) {
+                $bindings = $query->bindings;
+                app('log')->debug(
+                    Str::replaceArray('?', $bindings, $query->sql),
+                    ['query_timing' => $query->time]
+                );
+            });
+        }
     }
 }

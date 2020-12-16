@@ -19,21 +19,31 @@ class PetFilter extends Component
     {
         $this->action = $action;
         $request = request();
+        $rules = static::getFilterValues();
         $this->rows[] = $this->createRow(
             'type',
-            ['all', 'dogs', 'cats', 'other'],
+            $rules['type'],
             $request->get('type', 'all')
         );
         $this->rows[] = $this->createRow(
             'sex',
-            ['any', 'male', 'female'],
+            $rules['sex'],
             $request->get('sex', 'any')
         );
         $this->rows[] = $this->createRow(
             'age',
-            ['any', 'junior', 'young', 'senior'],
+            $rules['age'],
             $request->get('age', 'any')
         );
+    }
+
+    public static function getFilterValues(): array
+    {
+        return [
+            'type' => ['all', 'dog', 'cat', 'other'],
+            'sex' => ['any', 'male', 'female'],
+            'age' => ['any', 'junior', 'young', 'senior'],
+        ];
     }
 
     /**

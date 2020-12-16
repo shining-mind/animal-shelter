@@ -15,8 +15,8 @@ class CreatePetTagTable extends Migration
     {
         Schema::create('pet_tag', function (Blueprint $table) {
             $table->id();
-            $table->text('icon');
             $table->string('text', 128);
+            $table->text('icon');
         });
     }
 

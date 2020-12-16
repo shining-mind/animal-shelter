@@ -21,6 +21,20 @@
         </div>
     </header>
     <div class="content">
+        @if ($errors->any())
+            <section class="section">
+                <div class="alert alert-dismissible alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </section>
+        @endif
         @yield('content')
     </div>
     <footer class="footer">

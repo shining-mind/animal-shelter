@@ -9,20 +9,25 @@ $font-size: 24px;
 $header-height: 65px;
 $footer-height: 75px;
 $footer-padding: 15px;
+// borders
+$border-radius: 2em;
+$alert-border-radius: 0;
+// buttons
 $btn-border-radius: 0;
 $btn-padding-y: 10px;
 $btn-padding-x: 60px;
-$border-radius: 2em;
+// modals
 $modal-content-border-radius: 0;
-$input-border-radius: 1.4em;
-$input-border-color: $main-color;
-$input-border-width: 2px;
-$input-focus-border-color: $main-color;
-$input-btn-focus-color: rgba(0, 164, 186, 0.2);
 $modal-header-border-width: 0;
 $modal-foter-border-width: 0;
 $modal-header-padding: 1rem 1.5rem;
 $modal-inner-padding: 1.5rem;
 $modal-header-margin-between: .75rem;
+// forms
+$input-border-radius: 1.4em;
+$input-border-color: $main-color;
+$input-border-width: 2px;
+$input-focus-border-color: $main-color;
+$input-btn-focus-color: rgba(0, 164, 186, 0.2);
 $input-padding-y: .75rem;
 $input-padding-x: .75rem;
