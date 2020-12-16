@@ -40,8 +40,9 @@
             @yield('footer')
         </div>
     </footer>
+    @include('modals.feedback')
+    @include('modals.message')
     <script src="{{ mix('/js/app.js') }}"></script>
     @yield('scripts')
-    @include('modals.feedback')
 </body>
 </html>

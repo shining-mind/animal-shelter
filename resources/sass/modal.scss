@@ -3,10 +3,20 @@
         display: block;
         text-align: center;
     }
+
     &-footer {
         justify-content: space-evenly;
     }
+
     &-title {
         font-size: 1.5em;
+    }
+
+    .message {
+        text-align: center;
+    }
+
+    &-replacing {
+        overflow: hidden;
     }
 }

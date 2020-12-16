@@ -1,6 +1,6 @@
 .btn {
 
-    &:hover {
+    &:hover:not([disabled]) {
         color: $text-color;
         opacity: 0.9;
     }
