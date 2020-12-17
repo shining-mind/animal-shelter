@@ -42,7 +42,7 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e)
     {
         if ($this->isHttpException($e) && $e->getStatusCode() === 404) {
-            return response()->view('errors.404', ['title' => trans('messages.page_not_found')]);
+            return response()->view('errors.404', ['title' => trans('messages.404_title')]);
         }
         return parent::render($request, $e);
     }
