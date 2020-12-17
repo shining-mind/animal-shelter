@@ -31,5 +31,6 @@ return [
         0 => ':count год',
         1 => ':count года',
         2 => ':count лет',
-    ]
+    ],
+    'about_title' => 'О нас'
 ];

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
 use App\Repositories\Animals\AnimalRepository;
+use App\Repositories\Team\TeamRepository;
 use App\View\Components\PetFilter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -12,10 +13,12 @@ use Illuminate\Validation\Rule;
 class ViewController extends BaseController
 {
     protected AnimalRepository $animalRepository;
+    protected TeamRepository $teamRepository;
 
-    public function __construct(AnimalRepository $animalRepository)
+    public function __construct(AnimalRepository $animalRepository, TeamRepository $teamRepository)
     {
         $this->animalRepository = $animalRepository;
+        $this->teamRepository = $teamRepository;
     }
 
     public function home()
@@ -54,5 +57,13 @@ class ViewController extends BaseController
             abort(404);
         }
         return response()->redirectTo(url('/pets/' . $id));
+    }
+
+    public function about()
+    {
+        return view('about', [
+            'title' => trans('messages.about_title'),
+            'team' => $this->teamRepository->getTeam(),
+        ]);
     }
 }

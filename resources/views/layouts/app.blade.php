@@ -41,7 +41,7 @@
         <div class="container">
             <nav class="nav">
                 <div class="nav-item"><a href="{{ url('/about') }}" class="nav-link">О нас</a></div>
-                <div class="nav-item"><a href="{{ url('/contacts') }}" class="nav-link">Контакты</a></div>
+                <div class="nav-item"><a href="{{ url('/become-a-volunteer') }}" class="nav-link">Как стать волонтером</a></div>
                 <div class="nav-item"><a href="{{ url('/participants') }}" class="nav-link">Список участников</a></div>
                 <div class="nav-item"><a href="{{ url('/sponsors') }}" class="nav-link">Спонсоры</a></div>
             </nav>

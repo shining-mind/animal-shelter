@@ -18,3 +18,4 @@ Route::get('/', [ViewController::class, 'home']);
 Route::get('/pets', [ViewController::class, 'pets']);
 Route::get('/pets/feeling-lucky', [ViewController::class, 'feelingLucky']);
 Route::get('/pets/{id}', [ViewController::class, 'pet']);
+Route::get('/about', [ViewController::class, 'about']);
