@@ -16,12 +16,20 @@
             <div class="row header-inner">
                 <div class="col header-item header-item--help text-left"><a href="{{ url('/assist') }}" class="header-link">Хочу помочь</a></div>
                 <div class="col header-item header-item--logo"><a href="{{ url('/') }}" class="header-link"><img src="{{ asset('/images/logo.svg') }}"/></a></div>
-                <div class="col header-item header-item--menu"><a href="" class="nav-link">Меню</a></div>
+                <div class="col header-item header-item--menu">
+                    <a href="" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="{{ url('/about') }}">О нас</a>
+                        <a class="dropdown-item" href="{{ url('/become-a-volunteer') }}">Как стать волонтером</a>
+                        <a class="dropdown-item" href="{{ url('/participants') }}">Список участников</a>
+                        <a class="dropdown-item" href="{{ url('/sponsors') }}">Спонсоры</a>
+                      </div>
+                </div>
             </div>
         </div>
     </header>
     <div class="content">
-        @if ($errors->any())
+        @if (isset($errors) && $errors->any())
             <section class="section">
                 <div class="alert alert-dismissible alert-danger">
                     <ul>

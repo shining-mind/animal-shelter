@@ -13,6 +13,7 @@
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/dropdown";
 @import "~owl.carousel/src/scss/owl.carousel.scss";
 @import "./mixins";
 @import "./buttons";
@@ -33,6 +34,7 @@
 @import "./components/about";
 
 body {
+    background-color: #e4f6f8;
     background-image: url('../images/bg.png');
     font-family: $font-family;
     color: $main-color;

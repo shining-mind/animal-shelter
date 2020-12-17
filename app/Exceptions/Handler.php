@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -33,5 +34,16 @@ class Handler extends ExceptionHandler
     public function register()
     {
         //
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function render($request, Throwable $e)
+    {
+        if ($this->isHttpException($e) && $e->getStatusCode() === 404) {
+            return response()->view('errors.404', ['title' => trans('messages.page_not_found')]);
+        }
+        return parent::render($request, $e);
     }
 }
