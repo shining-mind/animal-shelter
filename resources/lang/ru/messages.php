@@ -32,5 +32,6 @@ return [
         1 => ':count года',
         2 => ':count лет',
     ],
-    'about_title' => 'О нас'
+    'about_title' => 'О нас',
+    'become_a_volunteer_title' => 'Станьте волонтером и помогите приютам!'
 ];

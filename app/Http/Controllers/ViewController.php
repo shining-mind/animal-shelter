@@ -66,4 +66,9 @@ class ViewController extends BaseController
             'team' => $this->teamRepository->getTeam(),
         ]);
     }
+
+    public function becomeAVolunteer()
+    {
+        return view('become-a-volunteer', ['title' => trans('messages.become_a_volunteer_title')]);
+    }
 }
