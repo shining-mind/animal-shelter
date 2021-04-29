@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-const { min } = require('lodash');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,9 +12,6 @@ const { min } = require('lodash');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .autoload({
-        jquery: ['$', 'window.jQuery', 'jQuery'],
-    })
     .sass('resources/sass/app.scss', 'public/css')
     .options({
         processCssUrls: false
